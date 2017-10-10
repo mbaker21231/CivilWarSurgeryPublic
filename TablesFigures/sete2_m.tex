@@ -1,0 +1,45 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{cc}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &            \\
+\hline
+Outcome: No Procedure&                     &            \\
+severity            &      -2.769\sym{**} &     (-2.61)\\
+Constant            &       3.051\sym{***}&      (5.42)\\
+\hline
+Outcome: Amputation &                     &            \\
+severity            &      -2.383         &     (-1.15)\\
+Constant            &       3.052\sym{*}  &      (2.02)\\
+\hline
+Outcome: Intricate  &                     &            \\
+severity            &      -3.370         &     (-1.42)\\
+Constant            &       4.382\sym{**} &      (2.58)\\
+\hline
+Amputation          &                     &            \\
+severity            &       7.205\sym{***}&      (8.68)\\
+>2 initials         &      -0.617         &     (-1.72)\\
+ln(reg. cases)      &     -0.0225         &     (-0.14)\\
+Hand Wound          &       2.184\sym{***}&      (4.80)\\
+Knee Wound          &       1.828\sym{**} &      (2.66)\\
+Leg Wound           &    -0.00979         &     (-0.02)\\
+Constant            &      -5.351\sym{***}&     (-7.54)\\
+\hline
+Intricate           &                     &            \\
+severity            &       3.844\sym{***}&      (3.93)\\
+>2 initials         &      0.0188         &      (0.05)\\
+ln(reg. cases)      &      -0.621\sym{***}&     (-4.14)\\
+Hand Wound          &      -0.641         &     (-0.77)\\
+Knee Wound          &      -0.670         &     (-0.60)\\
+Leg Wound           &      -1.813\sym{*}  &     (-2.47)\\
+Constant            &      -1.723\sym{*}  &     (-2.37)\\
+\hline
+N: Intricate        &          40         &            \\
+N: Amputation       &          81         &            \\
+N: No Procedure     &         214         &            \\
+N: Total            &         335         &            \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

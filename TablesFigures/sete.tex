@@ -1,0 +1,46 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{cc}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &            \\
+\hline
+Outcome: Procedure  &                     &            \\
+severity            &      -2.335         &     (-1.71)\\
+Arm Wound           &       0.452         &      (0.62)\\
+Hand Wound          &      0.0275         &      (0.03)\\
+Knee Wound          &      -2.046\sym{*}  &     (-2.33)\\
+Neck, Trunk, Shoulder Wound&     -0.0695         &     (-0.08)\\
+13th Illinois       &       0.942         &      (0.75)\\
+Constant            &       3.368\sym{***}&      (3.33)\\
+\hline
+Outcome: No Procedure&                     &            \\
+severity            &      -4.123\sym{***}&     (-4.37)\\
+Arm Wound           &       1.988         &      (1.56)\\
+Hand Wound          &       2.329         &      (1.84)\\
+Knee Wound          &      -1.089         &     (-1.52)\\
+Neck, Trunk, Shoulder Wound&      -1.028\sym{**} &     (-3.24)\\
+13th Illinois       &       1.613\sym{*}  &      (2.07)\\
+Constant            &       3.404\sym{***}&      (6.83)\\
+\hline
+Procedure           &                     &            \\
+severity            &       4.816\sym{***}&      (7.42)\\
+>2 initials         &      -0.363         &     (-1.37)\\
+ln(reg. cases)      &      -0.427\sym{***}&     (-3.88)\\
+Arm Wound           &       1.049\sym{*}  &      (2.28)\\
+Hand Wound          &       1.542\sym{***}&      (3.75)\\
+Head Wound          &      -2.000\sym{**} &     (-2.77)\\
+Knee Wound          &       1.200\sym{*}  &      (2.09)\\
+Leg Wound           &      -0.313         &     (-0.89)\\
+Neck, Trunk, Shoulder Wound&      -0.434         &     (-1.28)\\
+29th Missouri       &      -1.174         &     (-1.90)\\
+6th Missouri        &       0.983\sym{*}  &      (2.02)\\
+Constant            &      -2.256\sym{***}&     (-4.55)\\
+\hline
+N: Surgery          &         149         &            \\
+N: No surgery       &         349         &            \\
+N: Total            &         498         &            \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

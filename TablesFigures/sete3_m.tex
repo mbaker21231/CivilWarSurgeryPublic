@@ -1,0 +1,38 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{cc}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}         &            \\
+\hline
+Outcome: Procedure  &                     &            \\
+severity            &      -2.943         &     (-1.51)\\
+ln(reg. cases)      &       0.504\sym{*}  &      (2.17)\\
+Knee Wound          &      -2.804\sym{*}  &     (-2.43)\\
+Leg Wound           &       0.294         &      (0.28)\\
+Neck, Trunk, Shoulder Wound&       0.345         &      (0.44)\\
+Constant            &       2.280         &      (1.65)\\
+\hline
+Outcome: No Procedure&                     &            \\
+severity            &      -6.305\sym{***}&     (-5.58)\\
+ln(reg. cases)      &      -0.224         &     (-1.24)\\
+Knee Wound          &      -1.087         &     (-1.43)\\
+Leg Wound           &       0.610         &      (0.88)\\
+Neck, Trunk, Shoulder Wound&      -0.574         &     (-1.54)\\
+Constant            &       4.912\sym{***}&      (5.54)\\
+\hline
+Procedure           &                     &            \\
+severity            &       4.525\sym{***}&      (5.20)\\
+ln(reg. cases)      &      -0.485\sym{***}&     (-3.62)\\
+type==head          &      -1.686\sym{*}  &     (-2.36)\\
+Knee Wound          &       1.362\sym{*}  &      (2.27)\\
+49th Indiana        &       0.955         &      (1.78)\\
+Constant            &      -2.335\sym{***}&     (-3.60)\\
+\hline
+N: Surgery          &          75         &            \\
+N: No surgery       &         252         &            \\
+N: Total            &         327         &            \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
